@@ -1,0 +1,10 @@
+extends menu.pug
+
+block append charts
+    - var i = 0;
+    while i < humedad.length
+        - var hum = humedad[i].porcentaje_humedad
+        input(value=`${hum}` id='porcentaje_humedad' hidden)
+        div(style='width:40%;')#humedad
+            canvas#canvas_humedad
+        - i ++;

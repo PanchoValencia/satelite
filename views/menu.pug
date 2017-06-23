@@ -1,0 +1,26 @@
+extends layout.pug
+
+block content
+    div.wrapper
+        div.header
+            a(aria-hidden="true" href='http://localhost:3000/').header_index.fa.fa-home
+            h2.header_title Ingeniería en Telemática
+        div.container_menu
+            div.wrap-nav 
+                nav#nav.nav
+                    ul.nav_container
+                        li.nav_container-item
+                            a(href='http://localhost:3000/conocenos' id='conoce') Conócenos
+                        li.nav_container-item 
+                            a(href='http://localhost:3000/temperatura' id='temp') Temperatura
+                        li.nav_container-item 
+                            a(href='http://localhost:3000/humedad' id='humed') Humedad
+                        li.nav_container-item 
+                            a(href='http://localhost:3000/presion' id='press') Presión Atmosférica
+                        li.nav_container-item 
+                            a(href='http://localhost:3000/geolocalizacion' id='gps') Geolocalización
+                div.tool
+                    a(aria-hidden="true")#toggle.fa.fa-bars
+            
+            div#elements.elements
+                block charts

@@ -1,0 +1,12 @@
+extends menu.pug
+
+block append charts
+    div#map
+    - var i = 0;
+    while i < geo.length
+        - var latitud = geo[i].latitud
+        - var longitud = geo[i].longitud
+        input(id='latitud' value=`${latitud}` hidden)
+        input(id='longitud' value=`${longitud}` hidden)
+        - i ++;
+        

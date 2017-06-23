@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Segoe UI Light';
+    src: url('/surface/Assets/css/fonts/all/light/segoeuil.eot');
+    src: url('/surface/Assets/css/fonts/all/light/segoeuil.eot?#iefix') format('embedded-opentype'),
+         url('/surface/Assets/css/fonts/all/light/segoeuil.woff') format('woff'),
+         url('/surface/Assets/css/fonts/all/light/segoeuil.svg#SegoeUILight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family : "Segoe UI";
+}
+
+
+p{
+    line-height : $interlineado;
+    font-size   : $fz;
+    text-align  : justify;
+}

@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'Segoe UI Light';
+  src: url("/surface/Assets/css/fonts/all/light/segoeuil.eot");
+  src: url("/surface/Assets/css/fonts/all/light/segoeuil.eot?#iefix") format("embedded-opentype"), url("/surface/Assets/css/fonts/all/light/segoeuil.woff") format("woff"), url("/surface/Assets/css/fonts/all/light/segoeuil.svg#SegoeUILight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "Segoe UI"; }
+
+p {
+  line-height: 1.5em;
+  font-size: 1.1em;
+  text-align: justify; }
+
+.charts {
+  width: 100%;
+  height: calc(100vh - 71px); }
+
+img {
+  width: 100%;
+  height: auto; }
+
+.index {
+  height: 100vh;
+  background-color: #EB7F00;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+  .index_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%; }
+    .index_container-img {
+      width: 20%;
+      min-width: 80px; }
+    .index_container-tit {
+      text-align: center; }
+      .index_container-tit h1 {
+        color: #ACF0F2;
+        font-size: 6em; }
+    .index_container-desc {
+      margin: 20px 0;
+      min-width: 100px; }
+      .index_container-desc p {
+        text-align: center;
+        color: #ACF0F2;
+        font-size: 1.2em; }
+    .index_container-button {
+      display: flex;
+      align-self: center;
+      width: 30%;
+      min-width: 100px; }
+      .index_container-button a {
+        color: #F3FFE2;
+        background-color: #1695A3;
+        width: 100%;
+        padding: 5px 5px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        text-align: center;
+        font-size: 1.2em; }
+        .index_container-button a:hover {
+          color: #F3FFE2;
+          text-decoration: none;
+          cursor: pointer;
+          background-color: #225378; }
+
+.wrapper {
+  width: 100vw;
+  height: 100vh; }
+
+.header {
+  width: 100vw;
+  background-color: #1695A3;
+  display: flex;
+  align-items: baseline;
+  border-bottom: 3px solid #106c76; }
+  .header_index {
+    width: 15%;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 20px !important;
+    color: #F3FFE2; }
+    .header_index:hover {
+      cursor: pointer;
+      text-decoration: none;
+      color: #F3FFE2; }
+  .header_title {
+    width: 85%;
+    color: #F3FFE2;
+    font-size: 2.5em; }
+
+.container_menu {
+  width: 100vw;
+  display: flex; }
+
+.wrap-nav {
+  width: 15%;
+  display: flex;
+  height: calc(100vh - 71px); }
+  .wrap-nav .nav {
+    width: 95%;
+    background-color: #1695A3; }
+    .wrap-nav .nav_container {
+      margin: 0;
+      width: 100%; }
+      .wrap-nav .nav_container-item {
+        padding: 15px 10px; }
+        .wrap-nav .nav_container-item a {
+          color: #F3FFE2;
+          font-size: 1.2em; }
+          .wrap-nav .nav_container-item a:hover {
+            cursor: pointer; }
+        .wrap-nav .nav_container-item:hover {
+          background-color: #F3FFE2; }
+          .wrap-nav .nav_container-item:hover a {
+            color: #225378;
+            text-decoration: none; }
+      .wrap-nav .nav_container .selected {
+        background-color: #225378; }
+        .wrap-nav .nav_container .selected:hover a {
+          color: #F3FFE2;
+          cursor: pointer; }
+  .wrap-nav .tool {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #1cbed0; }
+    .wrap-nav .tool a {
+      color: #F3FFE2;
+      background-color: #1cbed0;
+      border-radius: 50%;
+      font-size: 20px;
+      padding: 5px; }
+      .wrap-nav .tool a:hover {
+        cursor: pointer;
+        color: #F3FFE2;
+        text-decoration: none; }
+
+.elements {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center; }
+
+.conocenos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  box-sizing: border-box; }
+  .conocenos_desc {
+    width: 70%;
+    border-bottom: 1px solid #ACF0F2;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between; }
+    .conocenos_desc h3 {
+      color: #EB7F00;
+      font-size: 2em; }
+    .conocenos_desc p {
+      color: #ff981f; }
+  .conocenos_other {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px; }
+    .conocenos_other-person {
+      width: 30%; }
+      .conocenos_other-person img {
+        border-radius: 50%; }
+      .conocenos_other-person p {
+        text-align: center;
+        margin-top: 10px;
+        color: #225378; }
+
+#temperatura {
+  width: 80%; }
+
+#map {
+  border: 2px solid #EB7F00;
+  width: 80%;
+  height: 500px; }
+
+@media screen and (max-width: 700px) {
+  .index_container {
+    width: 70%; } }
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 60px !important; } }
+
+@media screen and (max-width: 1300px) {
+  .container_menu {
+    display: flex;
+    flex-direction: column;
+    width: 100vw; }
+    .container_menu .wrap-nav {
+      width: 100%;
+      display: flex;
+      flex-direction: column; }
+      .container_menu .wrap-nav .nav {
+        width: 100%; }
+      .container_menu .wrap-nav .tool {
+        width: 100%;
+        height: 10px; }
+    .container_menu .elements {
+      margin-top: -150px;
+      width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  .header {
+    height: 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around; }
+  h2 {
+    display: none; } }
+
+@media screen and (max-width: 700px) {
+  .conocenos {
+    width: 100%; }
+    .conocenos_desc {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+    .conocenos_other {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%; }
+      .conocenos_other-person {
+        width: 100%; }
+        .conocenos_other-person img {
+          display: none; } }
+
+@media screen and (max-width: 400px) {
+  .conocenos_desc h3 {
+    font-size: 1.4em; } }
+
+@media screen and (max-width: 500px) {
+  canvas {
+    display: none !important; } }
+
+/*# sourceMappingURL=style.css.map */

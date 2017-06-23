@@ -1,0 +1,12 @@
+extends menu.pug
+
+block append charts
+    - var i = 0;
+    while i < presion.length
+        - var pre = presion[i].presion_atmosferica
+        - var alt = presion[i].altitud
+        input(value=`${pre}` id='presion_atmosferica' hidden)
+        input(value=`${alt}` id='altitud' hidden)
+        div(style='width:70%;')#presion
+            canvas#canvas_presion
+        - i ++;

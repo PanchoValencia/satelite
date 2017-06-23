@@ -1,0 +1,65 @@
+.index{
+    height           : 100vh;
+    background-color : $naranja;
+    display          : flex;
+    align-items      : center;
+    flex-direction   : column;
+    justify-content  : center;
+
+    &_container{
+        display        : flex;
+        align-items    : center;
+        flex-direction : column;
+        width          : 50%;
+
+        &-img{
+            width     : 20%;
+            min-width : 80px;
+        }
+
+        &-tit{
+            text-align : center;
+
+            h1{
+                color     : $azulLow;
+                font-size : 6em;
+            }
+        }
+
+        &-desc{
+            margin    : 20px 0;
+            min-width : 100px;
+
+            p{
+                text-align : center;
+                color      : $azulLow;
+                font-size  : 1.2em;
+            }
+        }
+
+        &-button{
+            display    : flex;
+            align-self : center;
+            width      : 30%;
+            min-width  : 100px;
+
+            a{
+                color            : $blanco;
+                background-color : $azulMid;
+                width            : 100%;
+                padding          : 5px 5px;
+                box-sizing       : border-box;
+                border-radius    : 5px;
+                text-align       : center;
+                font-size        : 1.2em;
+
+                &:hover{
+                    color            : $blanco;
+                    text-decoration  : none;
+                    cursor           : pointer;
+                    background-color : $azulHigh;
+                }
+            }
+        }
+    }
+}

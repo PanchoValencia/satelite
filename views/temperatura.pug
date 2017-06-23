@@ -1,0 +1,14 @@
+extends menu.pug
+
+block append charts
+    - var i = 0;
+    while i < temp.length
+        - var tgc = temp[i].grados_centigrados
+        input(value=`${tgc}` id='gradosCentigrados' hidden)
+        div(style='width:70%;')#temperatura
+            canvas#canvas_temperatura
+        - i ++;
+        
+    
+        
+    
